@@ -1,0 +1,43 @@
+{
+	"Document_root" : "/home/user/tabilet/jenny/www",
+	"Project" : "Jenny",
+	"Server_url" : "http://jenny.tabilet.com",
+	"Script" : "/app.php",
+	"Pubrole" : "p",
+	"Template" : "/home/user/tabilet/jenny/views",
+	"Uploaddir" : "/home/user/tabilet/jenny/www/upload",
+	"Secret" : "780c26da6e0fb319b24cade7e18d276d8e8656d3229b9b928035e8122e9638075666297065ee590a521103142242e4857167",
+	"Db" : [":host=;dbname=", "", ""],
+	"Log" : {"Filename": "/home/user/tabilet/jenny/logs/debug.log", "Level": "info"},
+	"Chartags" : {
+		"html":{"Content_type":"text/html; charset='UTF-8'"},
+		"json" : {
+			"Content_type":"application/json; charset='UTF-8'",
+			"Case":1
+		}
+	},
+	"Roles" : {
+		"a" : {
+			"Is_admin" : true,
+			"Id_name" : "a_id",
+			"Attributes" : ["a_id", "a_login"],
+			"Type_id" : 53,
+			"Surface" : "ta",
+			"Domain"  : "jenny.",
+			"Duration": 86400,
+			"Max_age" : 86400,
+			"Secret"  : "5555806ddc8e4b485bfc3d4d7200986fab5dba59f84be1eca130b5e6c32c035741fae3d08ff5f3caea8b054090011ba92c8a",
+			"Coding"  : "e96d62e6055f551e37f2ece208c89df4e0969126fa3696c2835a4a82f0a79a28ca553b58a5f7f45c9ef972fc1cf6032f6874",
+			"Logout"  : "/",
+			"Issuers" : {
+				"db" : {
+					"Default" : true,
+					"Screen"  : 1,
+					"Credential" : ["login", "passwd", "direct", "ta"],
+					"Sql": "proc_jenny_a",
+					"Out_pars": ["a_id", "a_login"]
+				}
+			}
+		}
+	}
+}

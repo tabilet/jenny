@@ -1,0 +1,19 @@
+{
+    "name": "genelet/project-php",
+    "description": "Sample Application of Genelet Framework",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Greetingland, LLC",
+            "email": "genelet@gmail.com"
+        }
+    ],
+    "require": {
+        "genelet/php": "^1.2.2"
+    },
+    "autoload": {
+        "psr-4" : {
+            "Jenny\\" : "src"
+		}
+	}
+}
