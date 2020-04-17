@@ -1,0 +1,22 @@
+{{ include("header.html") }}
+
+<style>
+table { border-collapse: collapse;  }
+th, td { padding: 8px; text-align: left; border-bottom: 1px solid #ddd; }
+tr:hover {background-color:#f5f5f5;}
+</style>
+{% set item = edit[0] %}
+
+            <form name="form-a-question-update" method=post action="question">
+			<input type=hidden name=action value="update">
+			<input type=hidden name=poll_id value="{{ poll_id }}">
+<table>
+<tr><th>Poll_id:</th><td> {{ item.poll_id }}</td></tr>
+<tr><th>Question:</th><td> <INPUT TYPE="TEXT" name="question" value="{{ item.question }}"></td></tr>
+<tr><th>Created:</th><td> <INPUT TYPE="TEXT" name="created" value="{{ item.created }}"></td></tr>
+</table>
+<button TYPE="SUBMIT"> Update Now </button>
+            </form>
+
+
+{{ include("footer.html") }}

@@ -1,0 +1,19 @@
+{{ include("header.html") }}
+
+<style>
+table { border-collapse: collapse;  }
+th, td { padding: 8px; text-align: left; border-bottom: 1px solid #ddd; }
+tr:hover {background-color:#f5f5f5;}
+</style>
+
+            <form name="a-question-insert" method=post action="question">
+			<input type=hidden name=action value="insert">
+<table>
+<tr><th>Question:</th><td> <INPUT TYPE="TEXT" name="question"></td></tr>
+<tr><th>Created:</th><td> <INPUT TYPE="TEXT" name="created"></td></tr>
+</table>
+<button TYPE="SUBMIT"> Add Now </button>
+            </form>
+
+
+{{ include("footer.html") }}

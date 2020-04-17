@@ -1,0 +1,17 @@
+{
+	"actions" : {
+		"startnew" : {"groups":["p"],"options":["no_db", "no_method"]},
+		"insert" : {},
+		"edit" : {},
+		"update" : {"groups":["p"]},
+		"delete" : {},
+		"topics" : {"groups":["p"]}
+	},
+	"current_table" : "poll_choice",
+	"current_key" : "choice_id",
+	"current_id_auto" : "choice_id",
+	"edit_pars"   : ["choice_id", "poll_id", "choice", "votes"],
+	"insert_pars" : ["poll_id", "choice", "votes"],
+	"update_pars" : ["choice_id", "poll_id", "choice", "votes"],
+	"topics_pars" : ["choice_id", "poll_id", "choice", "votes"]
+}

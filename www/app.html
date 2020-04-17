@@ -16,18 +16,27 @@
 <script>
 
 var $scope = new VueGenelet({handler:"/app.php", "mime":"vue",
-		"role":"p", "comp":"", "action":"topics"});
+		"role":"p", "comp":"question", "action":"topics"});
 $scope.start();
 
 var vm = new Vue({
   el: '#app',
   data : $scope,
   components: {
+    'p-header': httpVueLoader('./p/header.vue'),
+    'p-footer': httpVueLoader('./p/footer.vue'),
+    'p-question-edit': httpVueLoader('./p/question/edit.vue'),
+    'p-question-topics': httpVueLoader('./p/question/topics.vue'),
+    'p-choice-topics': httpVueLoader('./p/choice/topics.vue'),
     'a-header': httpVueLoader('./a/header.vue'),
     'a-footer': httpVueLoader('./a/footer.vue'),
     'a-login': httpVueLoader('./a/login.vue'),
-    'p-header': httpVueLoader('./p/header.vue'),
-    'p-footer': httpVueLoader('./p/footer.vue'),
+    'a-question-edit': httpVueLoader('./a/question/edit.vue'),
+    'a-question-topics': httpVueLoader('./a/question/topics.vue'),
+    'a-question-startnew': httpVueLoader('./a/question/startnew.vue'),
+    'a-choice-edit': httpVueLoader('./a/choice/edit.vue'),
+    'a-choice-topics': httpVueLoader('./a/choice/topics.vue'),
+    'a-choice-startnew': httpVueLoader('./a/choice/startnew.vue'),
 
   }
 });

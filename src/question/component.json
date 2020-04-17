@@ -1,0 +1,17 @@
+{
+	"actions" : {
+		"startnew" : {"groups":["p"],"options":["no_db", "no_method"]},
+		"insert" : {},
+		"edit" : {"groups":["p"]},
+		"update" : {},
+		"delete" : {},
+		"topics" : {"groups":["p"]}
+	},
+	"current_table" : "poll_question",
+	"current_key" : "poll_id",
+	"current_id_auto" : "poll_id",
+	"edit_pars"   : ["poll_id", "question", "created"],
+	"insert_pars" : ["question", "created"],
+	"update_pars" : ["poll_id", "question"],
+	"topics_pars" : ["poll_id", "question", "created"]
+}

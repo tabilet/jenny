@@ -21,7 +21,7 @@ module.exports = {
     sendit: function(e) {
       this.f0["role"] = "a";
       this.f0["tag"] = "json";
-      $scope.login('a', '', 'topics', this.f0);
+      $scope.login('a', 'question', 'topics', this.f0);
     }
   }
 }

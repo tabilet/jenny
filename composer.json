@@ -9,11 +9,13 @@
         }
     ],
     "require": {
-        "genelet/php": "^1.2.2"
+        "genelet/php": "^1.2.3"
     },
     "autoload": {
         "psr-4" : {
-            "Jenny\\" : "src"
+            "Jenny\\" : "src",
+			"Jenny\\Question\\" : "src/question",
+			"Jenny\\Choice\\" : "src/choice"
 		}
 	}
 }

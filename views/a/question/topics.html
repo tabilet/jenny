@@ -1,0 +1,28 @@
+{{ include("header.html") }}
+
+<style>
+table { border-collapse: collapse; width: 100% }
+th, td { padding: 8px; text-align: left; border-bottom: 1px solid #ddd; }
+tr:hover {background-color:#f5f5f5;}
+</style>
+<table>
+<thead><tr>
+<th>Poll_id</th>
+<th>Question</th>
+<th>Created</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+{% for item in topics %}<tr>
+<td><a href="question?action=edit&poll_id={{ item.poll_id }}">{{ item.poll_id }}</a></td>
+<td>{{ item.question }}</td>
+<td>{{ item.created }}</td>
+<td><a href="question?action=delete&poll_id={{ item.poll_id }}">Delete</a></td>
+</tr>
+{% endfor %}</tbody>
+</table>
+<p><a href="question?action=startnew">Add New</a></p>
+
+
+{{ include("footer.html") }}
