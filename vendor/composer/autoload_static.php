@@ -33,6 +33,8 @@ class ComposerStaticInit3665c09e3b94385280851b15e752ebc3
         ),
         'J' => 
         array (
+            'Jenny\\Question\\' => 15,
+            'Jenny\\Choice\\' => 13,
             'Jenny\\' => 6,
         ),
         'G' => 
@@ -68,6 +70,14 @@ class ComposerStaticInit3665c09e3b94385280851b15e752ebc3
         'Psr\\Http\\Message\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/http-message/src',
+        ),
+        'Jenny\\Question\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/question',
+        ),
+        'Jenny\\Choice\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/choice',
         ),
         'Jenny\\' => 
         array (
@@ -183,8 +193,12 @@ class ComposerStaticInit3665c09e3b94385280851b15e752ebc3
         'GuzzleHttp\\RetryMiddleware' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/RetryMiddleware.php',
         'GuzzleHttp\\TransferStats' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/TransferStats.php',
         'GuzzleHttp\\UriTemplate' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/UriTemplate.php',
+        'Jenny\\Choice\\Filter' => __DIR__ . '/../..' . '/src/choice/filter.php',
+        'Jenny\\Choice\\Model' => __DIR__ . '/../..' . '/src/choice/model.php',
         'Jenny\\Filter' => __DIR__ . '/../..' . '/src/filter.php',
         'Jenny\\Model' => __DIR__ . '/../..' . '/src/model.php',
+        'Jenny\\Question\\Filter' => __DIR__ . '/../..' . '/src/question/filter.php',
+        'Jenny\\Question\\Model' => __DIR__ . '/../..' . '/src/question/model.php',
         'Psr\\Http\\Message\\MessageInterface' => __DIR__ . '/..' . '/psr/http-message/src/MessageInterface.php',
         'Psr\\Http\\Message\\RequestInterface' => __DIR__ . '/..' . '/psr/http-message/src/RequestInterface.php',
         'Psr\\Http\\Message\\ResponseInterface' => __DIR__ . '/..' . '/psr/http-message/src/ResponseInterface.php',
