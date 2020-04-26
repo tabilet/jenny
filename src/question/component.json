@@ -11,7 +11,7 @@
 	"current_key" : "poll_id",
 	"current_id_auto" : "poll_id",
 	"edit_pars"   : ["poll_id", "question", "created"],
-	"insert_pars" : ["question", "created"],
+	"insert_pars" : ["question"],
 	"update_pars" : ["poll_id", "question"],
 	"topics_pars" : ["poll_id", "question", "created"]
 }

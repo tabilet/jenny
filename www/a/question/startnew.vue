@@ -17,7 +17,6 @@
             <form id="a-question-insert" @submit.prevent="sendit">
 <pre>
 Question: <INPUT v-model="f0.question">
-Created: <INPUT v-model="f0.created">
 
 </pre>
 <button TYPE="SUBMIT"> Submit </button>

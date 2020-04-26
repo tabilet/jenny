@@ -1,17 +1,17 @@
 [
     {
         "name": "genelet/php",
-        "version": "1.2.3",
-        "version_normalized": "1.2.3.0",
+        "version": "1.2.5",
+        "version_normalized": "1.2.5.0",
         "source": {
             "type": "git",
             "url": "https://github.com/genelet/php.git",
-            "reference": "6bc9d37618a97c5dbef647b10e51c2fcae2d535f"
+            "reference": "dbb4363c3ae5adcabf9750b3c1325cda4a3b97c0"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/genelet/php/zipball/6bc9d37618a97c5dbef647b10e51c2fcae2d535f",
-            "reference": "6bc9d37618a97c5dbef647b10e51c2fcae2d535f",
+            "url": "https://api.github.com/repos/genelet/php/zipball/dbb4363c3ae5adcabf9750b3c1325cda4a3b97c0",
+            "reference": "dbb4363c3ae5adcabf9750b3c1325cda4a3b97c0",
             "shasum": ""
         },
         "require": {
@@ -20,7 +20,7 @@
             "psr/simple-cache": "^1.0",
             "twig/twig": "^3.0"
         },
-        "time": "2020-04-13T08:18:16+00:00",
+        "time": "2020-04-18T10:17:33+00:00",
         "type": "project",
         "installation-source": "dist",
         "autoload": {

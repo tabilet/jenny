@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "495a0c91e06bfc7a34f9674fee417d02",
+    "content-hash": "aa472eaae0eaf87ac78c27580360be93",
     "packages": [
         {
             "name": "genelet/php",
-            "version": "1.2.3",
+            "version": "1.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/genelet/php.git",
-                "reference": "6bc9d37618a97c5dbef647b10e51c2fcae2d535f"
+                "reference": "dbb4363c3ae5adcabf9750b3c1325cda4a3b97c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/genelet/php/zipball/6bc9d37618a97c5dbef647b10e51c2fcae2d535f",
-                "reference": "6bc9d37618a97c5dbef647b10e51c2fcae2d535f",
+                "url": "https://api.github.com/repos/genelet/php/zipball/dbb4363c3ae5adcabf9750b3c1325cda4a3b97c0",
+                "reference": "dbb4363c3ae5adcabf9750b3c1325cda4a3b97c0",
                 "shasum": ""
             },
             "require": {
@@ -40,7 +40,7 @@
                 }
             ],
             "description": "PHP version of Genelet web development framework",
-            "time": "2020-04-13T08:18:16+00:00"
+            "time": "2020-04-18T10:17:33+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",

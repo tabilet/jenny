@@ -6,8 +6,8 @@
 	"Pubrole" : "p",
 	"Template" : "/home/user/tabilet/jenny/views",
 	"Uploaddir" : "/home/user/tabilet/jenny/www/upload",
-	"Secret" : "d53b95a978b4e556c56cd601117eb6f8e9f4a263f123ec9503f193912a105f8a73a0fb76752b6b67ebf17b0d6938da483c6d",
-	"Db" : ["mysql:host=localhost;dbname=jenny", "jenny", "fbff065053"],
+	"Secret" : "970bd5aa3a3f53c1d29b8e19fa0212d6f913cbe55851e5c001b04f3d843f166fabbe18e9948d5194431f63f04b62ac579170",
+	"Db" : ["mysql:host=localhost;dbname=jenny", "jenny", "75ba0f1dd4"],
 	"Log" : {"Filename": "/home/user/tabilet/jenny/logs/debug.log", "Level": "info"},
 	"Chartags" : {
 		"html":{"Content_type":"text/html; charset='UTF-8'"},
@@ -21,13 +21,13 @@
 			"Is_admin" : true,
 			"Id_name" : "a_id",
 			"Attributes" : ["a_id", "email", "a_firstname", "a_lastname"],
-			"Type_id" : 93,
+			"Type_id" : 125,
 			"Surface" : "ta",
 			"Domain"  : "jenny.tabilet.com",
 			"Duration": 86400,
 			"Max_age" : 86400,
-			"Secret"  : "fdbbd83ddfefa7310e0012f89b8dab845b927c81cded311d0c01fadf7138446d661c79067959d925d7bd32470509ac03b33d",
-			"Coding"  : "7034fccd8c5b6ef0c8e53464576b15a98b9f2e445ba3c45fa9f6d720b8d110d9601266e29537f3464d0980c9538b37b1b261",
+			"Secret"  : "f6839918273c1f64fd8cd3e906d9a174856b1660d6402272fa65addb3bcb52d33710a2baa348f6f32d999fcd8ce712f7d57b",
+			"Coding"  : "ca3cbe14a68042bbc4e6260a1c5277ca11ffee0935b92ffc571a5e27f1aeb335f5663d2e9c1e184be83414a09baa1d156c79",
 			"Logout"  : "/",
 			"Issuers" : {
 				"db" : {

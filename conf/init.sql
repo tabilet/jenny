@@ -1,6 +1,6 @@
 
-DROP TABLE IF EXISTS login_a;
-CREATE TABLE IF NOT EXISTS login_a (
+DROP TABLE IF EXISTS tabilet_login_a;
+CREATE TABLE IF NOT EXISTS tabilet_login_a (
   a_id int unsigned not null auto_increment,
   email varchar(32) NOT NULL DEFAULT '',
   passwd varchar(40) NOT NULL DEFAULT '',
@@ -13,8 +13,8 @@ CREATE TABLE IF NOT EXISTS login_a (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
-DROP TABLE IF EXISTS login_a_ip;
-CREATE TABLE IF NOT EXISTS login_a_ip (
+DROP TABLE IF EXISTS tabilet_login_a_tabilet_ip;
+CREATE TABLE IF NOT EXISTS tabilet_login_a_tabilet_ip (
   id int(10) unsigned NOT NULL AUTO_INCREMENT,
   ip int(10) unsigned NOT NULL,
   login VARCHAR(255) NOT NULL,
@@ -55,20 +55,20 @@ OUT out_firstname varchar(255), OUT out_lastname VARCHAR(255))
 BEGIN
   DECLARE c1 INT;
   DECLARE c2 INT;
-  SELECT COUNT(*) INTO c1 FROM login_a_ip WHERE ret='fail' AND ip=i_ip AND login=i_login AND (UNIX_TIMESTAMP(updated) >= (UNIX_TIMESTAMP(NOW())-3600));
-  SELECT COUNT(*) INTO c2 FROM login_a_ip WHERE ret='fail' AND ip=i_ip AND (UNIX_TIMESTAMP(updated) >= (UNIX_TIMESTAMP(NOW())-24*3600));
+  SELECT COUNT(*) INTO c1 FROM tabilet_login_a_tabilet_ip WHERE ret='fail' AND ip=i_ip AND login=i_login AND (UNIX_TIMESTAMP(updated) >= (UNIX_TIMESTAMP(NOW())-3600));
+  SELECT COUNT(*) INTO c2 FROM tabilet_login_a_tabilet_ip WHERE ret='fail' AND ip=i_ip AND (UNIX_TIMESTAMP(updated) >= (UNIX_TIMESTAMP(NOW())-24*3600));
   IF (c1<=5 AND c2<=20) THEN
     SELECT a_id, email, firstname, lastname INTO out_id, out_login, out_firstname, out_lastname
-    FROM login_a
+    FROM tabilet_login_a
     WHERE status IN ("Yes")
 AND email =i_login
 AND passwd=SHA1(concat(i_login, i_passwd));
 
     IF ISNULL(out_id) THEN
-      INSERT INTO login_a_ip (ip,login,ret) VALUES (i_ip,i_login,'fail');
+      INSERT INTO tabilet_login_a_tabilet_ip (ip,login,ret) VALUES (i_ip,i_login,'fail');
     ELSE
-      DELETE FROM login_a_ip WHERE ret='fail' AND ip=i_ip AND (UNIX_TIMESTAMP(updated) >= (UNIX_TIMESTAMP(NOW())-24*3600));
-      INSERT INTO login_a_ip (ip,login,ret) VALUES (i_ip,i_login,'success');
+      DELETE FROM tabilet_login_a_tabilet_ip WHERE ret='fail' AND ip=i_ip AND (UNIX_TIMESTAMP(updated) >= (UNIX_TIMESTAMP(NOW())-24*3600));
+      INSERT INTO tabilet_login_a_tabilet_ip (ip,login,ret) VALUES (i_ip,i_login,'success');
     END IF;
   ELSE
     SELECT '1030' INTO out_id;
