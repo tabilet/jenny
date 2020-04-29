@@ -15,7 +15,8 @@
         "psr-4" : {
             "Jenny\\" : "src",
 			"Jenny\\Question\\" : "src/question",
-			"Jenny\\Choice\\" : "src/choice"
+			"Jenny\\Choice\\" : "src/choice",
+			"Jenny\\Car\\" : "src/car"
 		}
 	}
 }

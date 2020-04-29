@@ -8,7 +8,7 @@ $pdo = new PDO(...$c->{"Db"});
 
 $jsons = array();
 $storage = array();
-foreach (["question","choice"] as $item) {
+foreach (["question","choice","car"] as $item) {
     $jsons[$item] = json_decode(file_get_contents(__DIR__ . "/../src/$item/component.json"));
     $class = '\\'."Jenny".'\\'.ucfirst($item).'\\'."Model";
     $storage[$item]  = new $class($pdo, $jsons[$item]);

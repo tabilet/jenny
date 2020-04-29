@@ -1,0 +1,32 @@
+{{ include("header.html") }}
+
+<style>
+table { border-collapse: collapse;  }
+th, td { padding: 8px; text-align: left; border-bottom: 1px solid #ddd; }
+tr:hover {background-color:#f5f5f5;}
+</style>
+
+            <form name="a-car-insert" method=post action="car">
+			<input type=hidden name=action value="insert">
+<table>
+<tr><th>RECALL_NUMBER_NUM:</th><td> <INPUT TYPE="TEXT" name="RECALL_NUMBER_NUM"></td></tr>
+<tr><th>YEAR:</th><td> <INPUT TYPE="TEXT" name="YEAR"></td></tr>
+<tr><th>MANUFACTURER_RECALL_NO_TXT:</th><td> <INPUT TYPE="TEXT" name="MANUFACTURER_RECALL_NO_TXT"></td></tr>
+<tr><th>CATEGORY_ETXT:</th><td> <INPUT TYPE="TEXT" name="CATEGORY_ETXT"></td></tr>
+<tr><th>CATEGORY_FTXT:</th><td> <INPUT TYPE="TEXT" name="CATEGORY_FTXT"></td></tr>
+<tr><th>MAKE_NAME_NM:</th><td> <INPUT TYPE="TEXT" name="MAKE_NAME_NM"></td></tr>
+<tr><th>MODEL_NAME_NM:</th><td> <INPUT TYPE="TEXT" name="MODEL_NAME_NM"></td></tr>
+<tr><th>UNIT_AFFECTED_NBR:</th><td> <INPUT TYPE="TEXT" name="UNIT_AFFECTED_NBR"></td></tr>
+<tr><th>SYSTEM_TYPE_ETXT:</th><td> <INPUT TYPE="TEXT" name="SYSTEM_TYPE_ETXT"></td></tr>
+<tr><th>SYSTEM_TYPE_FTXT:</th><td> <INPUT TYPE="TEXT" name="SYSTEM_TYPE_FTXT"></td></tr>
+<tr><th>NOTIFICATION_TYPE_ETXT:</th><td> <INPUT TYPE="TEXT" name="NOTIFICATION_TYPE_ETXT"></td></tr>
+<tr><th>NOTIFICATION_TYPE_FTXT:</th><td> <INPUT TYPE="TEXT" name="NOTIFICATION_TYPE_FTXT"></td></tr>
+<tr><th>COMMENT_ETXT:</th><td> <INPUT TYPE="TEXT" name="COMMENT_ETXT"></td></tr>
+<tr><th>COMMENT_FTXT:</th><td> <INPUT TYPE="TEXT" name="COMMENT_FTXT"></td></tr>
+<tr><th>RECALL_DATE_DTE:</th><td> <INPUT TYPE="TEXT" name="RECALL_DATE_DTE"></td></tr>
+</table>
+<button TYPE="SUBMIT"> Add Now </button>
+            </form>
+
+
+{{ include("footer.html") }}

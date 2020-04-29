@@ -1,0 +1,35 @@
+{{ include("header.html") }}
+
+<style>
+table { border-collapse: collapse;  }
+th, td { padding: 8px; text-align: left; border-bottom: 1px solid #ddd; }
+tr:hover {background-color:#f5f5f5;}
+</style>
+{% set item = edit[0] %}
+
+            <form name="form-a-car-update" method=post action="car">
+			<input type=hidden name=action value="update">
+			<input type=hidden name=tabilet_id value="{{ tabilet_id }}">
+<table>
+<tr><th>Tabilet_id:</th><td> {{ item.tabilet_id }}</td></tr>
+<tr><th>RECALL_NUMBER_NUM:</th><td> <INPUT TYPE="TEXT" name="RECALL_NUMBER_NUM" value="{{ item.RECALL_NUMBER_NUM }}"></td></tr>
+<tr><th>YEAR:</th><td> <INPUT TYPE="TEXT" name="YEAR" value="{{ item.YEAR }}"></td></tr>
+<tr><th>MANUFACTURER_RECALL_NO_TXT:</th><td> <INPUT TYPE="TEXT" name="MANUFACTURER_RECALL_NO_TXT" value="{{ item.MANUFACTURER_RECALL_NO_TXT }}"></td></tr>
+<tr><th>CATEGORY_ETXT:</th><td> <INPUT TYPE="TEXT" name="CATEGORY_ETXT" value="{{ item.CATEGORY_ETXT }}"></td></tr>
+<tr><th>CATEGORY_FTXT:</th><td> <INPUT TYPE="TEXT" name="CATEGORY_FTXT" value="{{ item.CATEGORY_FTXT }}"></td></tr>
+<tr><th>MAKE_NAME_NM:</th><td> <INPUT TYPE="TEXT" name="MAKE_NAME_NM" value="{{ item.MAKE_NAME_NM }}"></td></tr>
+<tr><th>MODEL_NAME_NM:</th><td> <INPUT TYPE="TEXT" name="MODEL_NAME_NM" value="{{ item.MODEL_NAME_NM }}"></td></tr>
+<tr><th>UNIT_AFFECTED_NBR:</th><td> <INPUT TYPE="TEXT" name="UNIT_AFFECTED_NBR" value="{{ item.UNIT_AFFECTED_NBR }}"></td></tr>
+<tr><th>SYSTEM_TYPE_ETXT:</th><td> <INPUT TYPE="TEXT" name="SYSTEM_TYPE_ETXT" value="{{ item.SYSTEM_TYPE_ETXT }}"></td></tr>
+<tr><th>SYSTEM_TYPE_FTXT:</th><td> <INPUT TYPE="TEXT" name="SYSTEM_TYPE_FTXT" value="{{ item.SYSTEM_TYPE_FTXT }}"></td></tr>
+<tr><th>NOTIFICATION_TYPE_ETXT:</th><td> <INPUT TYPE="TEXT" name="NOTIFICATION_TYPE_ETXT" value="{{ item.NOTIFICATION_TYPE_ETXT }}"></td></tr>
+<tr><th>NOTIFICATION_TYPE_FTXT:</th><td> <INPUT TYPE="TEXT" name="NOTIFICATION_TYPE_FTXT" value="{{ item.NOTIFICATION_TYPE_FTXT }}"></td></tr>
+<tr><th>COMMENT_ETXT:</th><td> <INPUT TYPE="TEXT" name="COMMENT_ETXT" value="{{ item.COMMENT_ETXT }}"></td></tr>
+<tr><th>COMMENT_FTXT:</th><td> <INPUT TYPE="TEXT" name="COMMENT_FTXT" value="{{ item.COMMENT_FTXT }}"></td></tr>
+<tr><th>RECALL_DATE_DTE:</th><td> <INPUT TYPE="TEXT" name="RECALL_DATE_DTE" value="{{ item.RECALL_DATE_DTE }}"></td></tr>
+</table>
+<button TYPE="SUBMIT"> Update Now </button>
+            </form>
+
+
+{{ include("footer.html") }}
